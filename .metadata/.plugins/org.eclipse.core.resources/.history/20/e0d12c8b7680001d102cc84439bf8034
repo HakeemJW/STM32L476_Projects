@@ -125,22 +125,6 @@ void delay(uint16_t ms)
 	while((TIM7->SR & TIM_SR_UIF) == 0);
 }
 
-void delay_us(uint32_t us)
-{
-	if (us == 0)
-		return;
-
-	RCC->APB1ENR1 |= RCC_APB1ENR1_TIM7EN;
-	TIM7->CR1 &= ~TIM_CR1_CEN;
-	TIM7->SR = 0;
-	TIM7->CNT = 0;
-	TIM7->PSC = 79;
-	TIM7->ARR = us -1;
-	TIM7->CR1 |= TIM_CR1_CEN;
-
-	while((TIM7->SR & TIM_SR_UIF) == 0);
-}
-
 void GPIO_Clock_Enable()
 {
 	RCC->AHB2ENR |= RCC_AHB2ENR_GPIOBEN | RCC_AHB2ENR_GPIOAEN;

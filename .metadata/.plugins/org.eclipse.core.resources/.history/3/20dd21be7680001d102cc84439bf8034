@@ -125,7 +125,7 @@ void delay(uint16_t ms)
 	while((TIM7->SR & TIM_SR_UIF) == 0);
 }
 
-void delay_us(uint32_t us)
+void delay_us(uint16_t us)
 {
 	if (us == 0)
 		return;
@@ -170,7 +170,7 @@ int main()
  	while(1)
  	{
  		GPIOB->ODR ^= GPIO_ODR_ODR_2;
- 		delay(1000);
+ 		delay_us(1000000);
  		/*if ((GPIOA->IDR & 0x1) == 0x1)
  		{
  			GPIOB->ODR ^= GPIO_ODR_ODR_2;

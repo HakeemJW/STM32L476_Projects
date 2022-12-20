@@ -170,7 +170,7 @@ int main()
  	while(1)
  	{
  		GPIOB->ODR ^= GPIO_ODR_ODR_2;
- 		delay(1000);
+ 		delay_us(100000);
  		/*if ((GPIOA->IDR & 0x1) == 0x1)
  		{
  			GPIOB->ODR ^= GPIO_ODR_ODR_2;
