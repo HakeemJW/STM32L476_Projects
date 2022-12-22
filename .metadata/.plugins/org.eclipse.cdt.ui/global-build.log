@@ -1,84 +1,473 @@
-09:58:20 **** Incremental Build of configuration Debug for project blink ****
+15:38:15 **** Incremental Build of configuration Debug for project Sonar ****
 make -j24 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\blink\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: blink.elf
+../Src/main.c: In function 'main':
+../Src/main.c:225:6: warning: variable 'test_distance' set but not used [-Wunused-but-set-variable]
+  225 |  int test_distance;
+      |      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
  
-arm-none-eabi-size   blink.elf 
-arm-none-eabi-objdump -h -S  blink.elf  > "blink.list"
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
    text	   data	    bss	    dec	    hex	filename
-    944	      8	   1568	   2520	    9d8	blink.elf
+   3412	      8	   1576	   4996	   1384	Sonar.elf
 Finished building: default.size.stdout
  
-Finished building: blink.list
+Finished building: Sonar.list
  
-09:58:30 **** Incremental Build of configuration Debug for project blink ****
+15:38:29 **** Incremental Build of configuration Debug for project Sonar ****
 make -j24 all 
-arm-none-eabi-size   blink.elf 
+arm-none-eabi-size   Sonar.elf 
    text	   data	    bss	    dec	    hex	filename
-    944	      8	   1568	   2520	    9d8	blink.elf
+   3412	      8	   1576	   4996	   1384	Sonar.elf
 Finished building: default.size.stdout
  
-09:59:28 **** Incremental Build of configuration Debug for project blink ****
+15:39:02 **** Incremental Build of configuration Debug for project Sonar ****
 make -j24 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\blink\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: blink.elf
- 
-arm-none-eabi-size   blink.elf 
-arm-none-eabi-objdump -h -S  blink.elf  > "blink.list"
+arm-none-eabi-size   Sonar.elf 
    text	   data	    bss	    dec	    hex	filename
-    948	      8	   1568	   2524	    9dc	blink.elf
+   3412	      8	   1576	   4996	   1384	Sonar.elf
 Finished building: default.size.stdout
  
-Finished building: blink.list
- 
-10:04:20 **** Incremental Build of configuration Debug for project blink ****
+15:41:31 **** Incremental Build of configuration Debug for project Sonar ****
 make -j24 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\blink\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: blink.elf
- 
-arm-none-eabi-size   blink.elf 
-arm-none-eabi-objdump -h -S  blink.elf  > "blink.list"
+arm-none-eabi-size   Sonar.elf 
    text	   data	    bss	    dec	    hex	filename
-    944	      8	   1568	   2520	    9d8	blink.elf
+   3412	      8	   1576	   4996	   1384	Sonar.elf
 Finished building: default.size.stdout
  
-Finished building: blink.list
- 
-10:17:51 **** Incremental Build of configuration Debug for project blink ****
-make -j24 all 
-arm-none-eabi-size   blink.elf 
-   text	   data	    bss	    dec	    hex	filename
-    944	      8	   1568	   2520	    9d8	blink.elf
-Finished building: default.size.stdout
- 
-10:20:22 **** Incremental Build of configuration Debug for project blink ****
+15:43:12 **** Incremental Build of configuration Debug for project Sonar ****
 make -j24 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\blink\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: blink.elf
+../Src/main.c: In function 'main':
+../Src/main.c:225:6: warning: variable 'test_distance' set but not used [-Wunused-but-set-variable]
+  225 |  int test_distance;
+      |      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
  
-arm-none-eabi-size   blink.elf 
-arm-none-eabi-objdump -h -S  blink.elf  > "blink.list"
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
    text	   data	    bss	    dec	    hex	filename
-    944	      8	   1568	   2520	    9d8	blink.elf
+   3404	      8	   1576	   4988	   137c	Sonar.elf
 Finished building: default.size.stdout
  
-Finished building: blink.list
+Finished building: Sonar.list
  
-10:21:37 **** Incremental Build of configuration Debug for project blink ****
+15:44:04 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	      8	   1576	   4988	   137c	Sonar.elf
+Finished building: default.size.stdout
+ 
+15:54:16 **** Incremental Build of configuration Debug for project Sonar ****
 make -j24 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\blink\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: blink.elf
+../Src/main.c: In function 'main':
+../Src/main.c:225:6: warning: variable 'test_distance' set but not used [-Wunused-but-set-variable]
+  225 |  int test_distance;
+      |      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
  
-arm-none-eabi-size   blink.elf 
-arm-none-eabi-objdump -h -S  blink.elf  > "blink.list"
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
    text	   data	    bss	    dec	    hex	filename
-    944	      8	   1568	   2520	    9d8	blink.elf
+   3404	      8	   1576	   4988	   137c	Sonar.elf
 Finished building: default.size.stdout
  
-Finished building: blink.list
+Finished building: Sonar.list
+ 
+15:57:14 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	      8	   1576	   4988	   137c	Sonar.elf
+Finished building: default.size.stdout
+ 
+16:00:57 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	      8	   1576	   4988	   137c	Sonar.elf
+Finished building: default.size.stdout
+ 
+16:04:10 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:225:6: warning: variable 'test_distance' set but not used [-Wunused-but-set-variable]
+  225 |  int test_distance;
+      |      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3404	      8	   1576	   4988	   137c	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+16:33:21 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3408	      8	   1576	   4992	   1380	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+17:14:11 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3408	      8	   1576	   4992	   1380	Sonar.elf
+Finished building: default.size.stdout
+ 
+21:07:42 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1576	   4976	   1370	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+10:49:23 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1576	   4976	   1370	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+01:50:53 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	      8	   1576	   4976	   1370	Sonar.elf
+Finished building: default.size.stdout
+ 
+01:58:39 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_Pin_Init':
+../Src/main.c:185:20: error: called object is not a function or function pointer
+  185 |  GPIOC->OTYPER &= ~(0x01<<14)
+      |                    ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+01:58:48 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3400	      8	   1576	   4984	   1378	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:06:47 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3400	      8	   1576	   4984	   1378	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:10:22 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3400	      8	   1576	   4984	   1378	Sonar.elf
+Finished building: default.size.stdout
+ 
+02:12:23 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3400	      8	   1576	   4984	   1378	Sonar.elf
+Finished building: default.size.stdout
+ 
+02:16:15 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:19:48 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3400	      8	   1576	   4984	   1378	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:20:18 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3400	      8	   1576	   4984	   1378	Sonar.elf
+Finished building: default.size.stdout
+ 
+02:25:34 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3400	      8	   1576	   4984	   1378	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:26:27 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:27:58 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+02:34:03 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:35:41 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+02:45:15 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+02:46:38 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+02:47:57 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:50:39 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3416	      8	   1576	   5000	   1388	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+02:58:55 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3424	      8	   1584	   5016	   1398	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+03:02:30 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3424	      8	   1584	   5016	   1398	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+03:03:10 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3424	      8	   1584	   5016	   1398	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+03:03:43 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3424	      8	   1584	   5016	   1398	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+03:08:47 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3284	      8	   1584	   4876	   130c	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+03:16:26 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3300	      8	   1584	   4892	   131c	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+03:17:01 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3284	      8	   1584	   4876	   130c	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+03:18:24 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L476VGTx -DSTM32L4 -DSTM32 -DSTM32L476G_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Sonar.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Hakeem\STM32CubeIDE\workspace_1.10.1\Sonar\STM32L476VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sonar.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sonar.elf
+ 
+arm-none-eabi-size   Sonar.elf 
+arm-none-eabi-objdump -h -S  Sonar.elf  > "Sonar.list"
+   text	   data	    bss	    dec	    hex	filename
+   3356	      8	   1584	   4948	   1354	Sonar.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sonar.list
+ 
+09:09:28 **** Incremental Build of configuration Debug for project Sonar ****
+make -j24 all 
+arm-none-eabi-size   Sonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3356	      8	   1584	   4948	   1354	Sonar.elf
+Finished building: default.size.stdout
  

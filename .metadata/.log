@@ -208,3 +208,6 @@ Binding(F4,
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-12-19 20:32:27.465
 !MESSAGE Indexed 'blink' (2 sources, 53 headers) in 0.175 sec: 1,947 declarations; 2,809 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-12-20 11:44:12.903
+!MESSAGE Indexed 'Sonar' (3 sources, 53 headers) in 0.227 sec: 1,949 declarations; 2,811 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
